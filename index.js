@@ -2,7 +2,7 @@ window.onload=()=>{
     alert("Welcome to DOM!!");
     console.log("welcome to DOM");
     console.log("Page Loaded Sucessfully!!);
-};
+}
 document.getElementById('demo').onclick=()=>{
     document.getElementById('demo').innerHTML="Yayy changed!!";
     document.getElementById('demo').style.backgroundColor= 'skyblue';
