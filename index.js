@@ -1,5 +1,5 @@
 window.onload=()=>{
-    alert("Welcome to DOM!!")
+    alert("Welcome to DOM!!");
     console.log("welcome to DOM");
     console.log("Page Loaded Sucessfully!!);
 };
