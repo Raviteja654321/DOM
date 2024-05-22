@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.jpeg">
+    <title>Document Object Model</title>
+    
+</head>
+<style>
+    #container {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      background: yellow;
+    }
+    #animate {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background-color: red;
+    }
+    </style>
+<body style="text-align: center; background-color: antiquewhite;" >
+    <h1 style="color: green;">DOM Learning</h1>
+    <p>Click the Button to change text and color below</p>
+    <button style="font-size: medium;" id="demo">Click Here</button>
+    <hr>
+
+    <h2 class="time">Time Now</h2>
+    <h2 class="date">Date</h2>
+    <hr>
+
+    <h2>JavaScript Validation</h2>
+    <p>Please input a number between 1 and 10:</p>
+    <input id="number" type="number" value=100 required="true" onfocus="this.style.background='lightpink'">
+    <button type="button" id="input_number">Submit</button>
+    <h3 id="validation"></h3>
+
+    <hr>
+    <h2>Animating the Box</h2>
+    <p><button onclick="myMove()">Start Moving</button></p> 
+    <div id ="container" style="margin-left: 550px;">
+        <div id ="animate"></div>
+    </div>
+    <hr>
+
+    <h2>The Oninput Attribute</h2>
+    Enter your name: <input type="text" id="fname" oninput="upperCase()" >
+    <p>When you write in the input field, a function is triggered to transform the input to upper case.</p>
+    <hr>
+
+    <div id="hover" style="background-color: lightpink;">
+        <h2>Hover Here</h2>
+            <h3>
+                Cursor over me
+            </h3>
+        <hr>
+    </div>
+
+    
+    <div id="click" style="background-color: cyan;">
+        <h2>Click Here</h2>
+            <h3>
+                Click Me
+            </h3>
+        <hr>
+    </div>
+    <hr>
+
+    <h2>Event Listener</h2>
+    <button type="button" id="eventlistener">Click me</button>
+</body>
+<script src="index.js"></script>
+</html>
