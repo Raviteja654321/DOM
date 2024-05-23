@@ -15,7 +15,9 @@ const seconds = now.getSeconds();
 
 document.getElementsByClassName('time')[0].innerHTML= "Time Now = "+ hours+" hours : "+minutes + " minutes";
 
-document.getElementsByClassName('date')[0].innerHTML="Date = "+ now.getDate()+"/"+now.getMonth()+"/"+now.getFullYear();
+
+let month = now.getMonth()+1;
+document.getElementsByClassName('date')[0].innerHTML="Date = "+ now.getDate()+"/"+month+"/"+now.getFullYear();
 
 document.getElementById('input_number').onclick = () => {
     let x = document.getElementById('number').value;
